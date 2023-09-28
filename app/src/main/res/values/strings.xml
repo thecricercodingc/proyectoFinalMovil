@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">proyectoFinalMovil</string>
+    <string name="textSlogan">¡Paws! La aplicación #1 de manejo y atención de mascotas, en Colombia</string>
+    <string name="textBtnSignIn">Iniciar Sesión</string>
+    <string name="textBtnSignUp">Registrar</string>
+    <string name="textContentImgPaws">imgPaws</string>
+    <string name="textBtnNext">Siguiente</string>
+    <string name="textSignInScreen">¡Ingresa el correo con el que estas registrado en la plataforma!</string>
+    <string name="textHintCorreo">Correo</string>
+    <string name="textBtnSignInPw">Ingresar</string>
+    <string name="textInputPw">Contraseña</string>
+    <string name="textSignInPw">Ingresa la contraseña asociada al correo</string>
+    <string name="textTitleDashboardPetClient">Mascotas</string>
 </resources>
