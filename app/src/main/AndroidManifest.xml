@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoFinalMovil"
         tools:targetApi="31">
         <activity
+            android:name=".ReconocerMascotaImg"
+            android:exported="false" />
+        <activity
             android:name=".AddMascotaName"
             android:exported="false" />
         <activity

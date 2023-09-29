@@ -14,14 +14,14 @@ class AddMascota : AppCompatActivity() {
         setContentView(R.layout.activity_add_mascota)
 
         val spinnerTipoMascota : Spinner = findViewById(R.id.typesPetSpinner)
-        val tiposMascota = mutableListOf("Ave", "Perro", "Gato")
+        val tiposMascota = mutableListOf("Ave", "Perro", "Gato", "Roedor")
         val adapter = ArrayAdapter(this,
             R.layout.spinner_mascota_item, tiposMascota)
         spinnerTipoMascota.adapter = adapter
 
         val btnNextAddMascota: Button = findViewById(R.id.btnNextAddMascota)
         btnNextAddMascota.setOnClickListener{
-            val intent = Intent(this,AddMascotaName::class.java)
+            val intent = Intent(this,ReconocerMascotaImg::class.java)
             startActivity(intent)
             finish()
         }
