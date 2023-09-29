@@ -6,9 +6,12 @@
     <string name="textContentImgPaws">imgPaws</string>
     <string name="textBtnNext">Siguiente</string>
     <string name="textSignInScreen">¡Ingresa el correo con el que estas registrado en la plataforma!</string>
+    <string name="textSignUpScreen">¡Ingresa el correo con el que deseas registrarte en la plataforma!</string>
     <string name="textHintCorreo">Correo</string>
     <string name="textBtnSignInPw">Ingresar</string>
     <string name="textInputPw">Contraseña</string>
+    <string name="repeatPassword">Repetir Contraseña</string>
+    <string name="signUpPasswordLabel">Ingresa la contraseña que deseas darle a la cuenta</string>
     <string name="textSignInPw">Ingresa la contraseña asociada al correo</string>
     <string name="textTitleDashboardPetClient">Mascotas</string>
 </resources>

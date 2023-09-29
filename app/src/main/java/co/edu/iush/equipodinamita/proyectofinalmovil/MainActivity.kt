@@ -13,8 +13,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnSigIn: Button = findViewById(R.id.btnSignIn);
+        val btnSignUp: Button = findViewById(R.id.btnSignUp);
         btnSigIn.setOnClickListener{
             val NewScreen = Intent(this, SignIn:: class.java)
+            startActivity(NewScreen)
+        }
+        btnSignUp.setOnClickListener{
+            val NewScreen = Intent(this, SignUp:: class.java)
             startActivity(NewScreen)
         }
 
