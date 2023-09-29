@@ -7,7 +7,7 @@
     tools:context=".Vacunas">
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnCerrarVacunas"
         android:layout_width="37dp"
         android:layout_height="34dp"
         android:background="@android:drawable/screen_background_light_transparent"

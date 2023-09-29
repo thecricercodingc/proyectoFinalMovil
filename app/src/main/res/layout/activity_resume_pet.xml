@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ResumePet">
 
+    <ImageButton
+        android:id="@+id/btnCerrarResumePet"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toEndOf="@+id/txtTitleHistoriaClinica"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
     <Button
         android:id="@+id/btnNoticias"
         android:layout_width="210dp"

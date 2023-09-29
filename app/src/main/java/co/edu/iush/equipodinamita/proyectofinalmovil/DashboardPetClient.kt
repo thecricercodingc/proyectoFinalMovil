@@ -1,6 +1,7 @@
 package co.edu.iush.equipodinamita.proyectofinalmovil
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,13 @@ class DashboardPetClient : AppCompatActivity() {
         val btnAddPet: Button = findViewById(R.id.btnAddPetDashboardPetClient)
         btnAddPet.setOnClickListener{
             val intent = Intent(this,AddMascota::class.java)
+            startActivity(intent)
+        }
+
+        val btnEmergencyHome: Button = findViewById(R.id.btnEmergencyDashboardPetClient)
+        btnEmergencyHome.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse("tel:4564324")
             startActivity(intent)
         }
     }

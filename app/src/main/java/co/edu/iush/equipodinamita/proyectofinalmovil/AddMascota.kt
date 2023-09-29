@@ -1,8 +1,10 @@
 package co.edu.iush.equipodinamita.proyectofinalmovil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.Spinner
 import java.util.ArrayList
 
@@ -16,5 +18,12 @@ class AddMascota : AppCompatActivity() {
         val adapter = ArrayAdapter(this,
             R.layout.spinner_mascota_item, tiposMascota)
         spinnerTipoMascota.adapter = adapter
+
+        val btnNextAddMascota: Button = findViewById(R.id.btnNextAddMascota)
+        btnNextAddMascota.setOnClickListener{
+            val intent = Intent(this,AddMascotaName::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

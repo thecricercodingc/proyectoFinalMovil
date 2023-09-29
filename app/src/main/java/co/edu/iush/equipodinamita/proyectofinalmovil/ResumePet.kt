@@ -1,7 +1,10 @@
 package co.edu.iush.equipodinamita.proyectofinalmovil
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import org.w3c.dom.Text
@@ -23,5 +26,21 @@ class ResumePet : AppCompatActivity() {
         textNombreMascota.text = nombre
         textFechaNMascota.text = fechaNacimiento
         imgFotoMascota.setImageResource(R.drawable.mascotaej)
+
+        val btnHistoriaClinica: Button = findViewById(R.id.btnHistoriaClinica)
+        val btnCerrarResumePet: ImageButton = findViewById(R.id.btnCerrarResumePet)
+        val btnInicio: Button = findViewById(R.id.btnInicio)
+
+        btnInicio.setOnClickListener{
+            finish()
+        }
+        btnCerrarResumePet.setOnClickListener{
+            finish()
+        }
+        btnHistoriaClinica.setOnClickListener {
+            val intent = Intent(this,HistoriaClinica::class.java)
+            intent.putExtra("idMascota", idMascota)
+            startActivity(intent)
+        }
     }
 }
