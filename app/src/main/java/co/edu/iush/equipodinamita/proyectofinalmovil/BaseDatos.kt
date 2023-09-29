@@ -13,5 +13,7 @@ class BaseDatos {
         var mascotas = mutableListOf(Pet(1,"Carlota", "12-05-2020", 3,"papilón", "mascotaej", "calmada", "Agility",4.5F, historiaClinica, vacunas))
 
         var usuarios = mutableListOf(UsuarioModel(1,"Cristian", "cc@gmail.com","12345", mascotas))
+
+        var configuracion = mutableListOf(ConfiguracionModel("account", "perfil"), ConfiguracionModel("bell", "Notificaciones"), ConfiguracionModel("bag", "Politicas y reglamentos"), ConfiguracionModel("tool", "Configuracion avanzada"), ConfiguracionModel("door", "Cerrar sesion"))
     }
 }

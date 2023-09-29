@@ -25,6 +25,12 @@ class DashboardPetClient : AppCompatActivity() {
             intent.data = Uri.parse("tel:4564324")
             startActivity(intent)
         }
+
+        val btnConfiguracion:Button = findViewById(R.id.btnSettingDashboardPetClient)
+        btnConfiguracion.setOnClickListener {
+            val NewScreen = Intent(this, Configuracion:: class.java)
+            startActivity(NewScreen)
+        }
     }
     override fun onResume() {
         super.onResume()
