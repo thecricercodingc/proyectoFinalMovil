@@ -1,12 +1,14 @@
 package co.edu.iush.equipodinamita.proyectofinalmovil
 
 import android.content.Context
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class ConfiguracionAdapter(private val context: Context, val listaDeConfiguraciones: MutableList<ConfiguracionModel>) : BaseAdapter()  {
     override fun getCount(): Int {
@@ -28,12 +30,10 @@ class ConfiguracionAdapter(private val context: Context, val listaDeConfiguracio
 
         var image = view.findViewById<ImageView>(R.id.imageOpcionConfiguracion)
 
-
-        var configuracion = this.listaDeConfiguraciones.get(p0) as ConfiguracionModel
+        var configuracion = this.listaDeConfiguraciones.get(p0)
 
         textNombre.text = configuracion.nombre
-        //image.setImageResource(R.drawable.)
-
+        image.setImageResource(context.getResources().getIdentifier(configuracion.src, "drawable", context.packageName));
         return view
     }
 }

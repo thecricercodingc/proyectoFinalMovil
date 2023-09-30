@@ -16,6 +16,9 @@
             android:name=".ReconocerMascotaImg"
             android:exported="false" />
         <activity
+            android:name=".Configuracion"
+            android:exported="false" />
+        <activity
             android:name=".ConfiguracionItem"
             android:exported="false" />
         <activity
